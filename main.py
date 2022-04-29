@@ -54,7 +54,19 @@ def isnum(user_input):
     else:
         return True
 
-def if_taken(user_input):
+def if_taken(coords , board):
+    row =  coords[0]
+    col = coords[1]
+    if board[row][col] != "-":
+        print("This position is already taken.")
+        return True
+    else: return False
+
+def coordinates(user_input):
+    row = int(user_input/3)
+    col = user_input
+    if col > 2:
+        col = int(col % 3)
     
 # all the functions will return true therefore, this while loop will run for every function
 
