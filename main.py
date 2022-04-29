@@ -15,7 +15,7 @@ def print_board(board):
         for slot in row:
             print(f"{slot} ", end="")
         print()
-
+      
 print_board(board)
 
 # function to quit the game
